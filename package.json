@@ -1,0 +1,28 @@
+{
+  "name": "Javascript-algorithm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghostratel/Javascript-algorithm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghostratel/Javascript-algorithm/issues"
+  },
+  "homepage": "https://github.com/ghostratel/Javascript-algorithm#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-jest": "^24.8.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-jest": "^22.5.1",
+    "jest": "^24.8.0"
+  }
+}
