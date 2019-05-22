@@ -6,8 +6,8 @@
  */
 function getMin(arr){
   if(arr.length === 1) {return arr[0]}
-  let max = Math.max(...arr)
-  for(let i = 2; i <= max; i++) {
+  let min = Math.min(...arr)
+  for(let i = 2; i <= min; i++) {
     let _passedCount = 0
     for(let j = 0; j < arr.length; j++) {
       if(arr[j] % i !== 0) {
