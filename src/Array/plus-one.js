@@ -14,7 +14,7 @@ var plusOne = function (digits) {
     }
   }
   digits[0] === 0 && digits.shift()
-  return dig
+  return digits
 }
 
 export default plusOne
