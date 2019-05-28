@@ -1,17 +1,33 @@
-import repeatedSubstringPattern from '../src/String/repeated-substring-pattern.js'
+import isValid from '../src/String/valid-parentheses.js'
 
 test('case 1', () => {
-  expect(repeatedSubstringPattern('abab')).toBe(true)
+  expect(isValid('()')).toBe(true)
 })
 
 test('case 2', () => {
-  expect(repeatedSubstringPattern('abcab')).toBe(false)
+  expect(isValid('()[]{}')).toBe(true)
 })
 
 test('case 3', () => {
-  expect(repeatedSubstringPattern('babbabbabbabbab')).toBe(true)
+  expect(isValid('(]')).toBe(false)
 })
 
 test('case 4', () => {
-  expect(repeatedSubstringPattern('a')).toBe(false)
+  expect(isValid('([)]')).toBe(false)
+})
+
+test('case 5', () => {
+  expect(isValid('{[]}')).toBe(true)
+})
+
+test('case 6', () => {
+  expect(isValid('[({(())}[()])]')).toBe(true)
+})
+
+test('case 7', () => {
+  expect(isValid('(')).toBe(false)
+})
+
+test('case 8', () => {
+  expect(isValid('')).toBe(true)
 })
