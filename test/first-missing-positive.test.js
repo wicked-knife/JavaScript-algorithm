@@ -18,3 +18,7 @@ test('case 3', () => {
 test('case 4', () => {
   expect(firstMissingPositive([7,8,9,11,12])).toBe(1)
 })
+
+test('case 5', () => {
+  expect(firstMissingPositive([])).toBe(1)
+})
