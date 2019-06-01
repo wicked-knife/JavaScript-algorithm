@@ -1,7 +1,7 @@
 import firstMissingPositive from '../src/Array/first-missing-positive.js'
 
 test('case 1', () => {
-  expect(firstMissingPositive([2,3,4,5])).toBe(1)
+  expect(firstMissingPositive([2,4,3,5])).toBe(1)
 })
 
 

@@ -3,11 +3,19 @@
  * @return {number}
  */
 var firstMissingPositive = function(nums) {
-  let ret = 1
-  while(nums.indexOf(ret) !== -1) {
-    ret++
+  const hash = []
+  for(let i = 0; i < nums.length; i++) {
+    if(nums[i] > 0) {
+      hash[i] = nums[i]
+    }
   }
-  return ret
+  debugger
+  for(let i = 0; i < hash.length; i++) {
+    if(!hash[i]) {
+      return i
+    }
+  }
+  return hash.pop() + 1
 }
 
 export default firstMissingPositive
