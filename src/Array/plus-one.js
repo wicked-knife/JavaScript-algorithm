@@ -3,10 +3,10 @@
  * @param {number[]} digits
  * @return {number[]}
  */
-var plusOne = function (digits) {
+var plusOne = function(digits) {
   digits.unshift(0)
   for (let i = digits.length - 1; i >= 0; i--) {
-    if(digits[i] === 9) {
+    if (digits[i] === 9) {
       digits[i] = 0
     } else {
       digits[i]++
