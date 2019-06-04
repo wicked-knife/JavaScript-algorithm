@@ -8,7 +8,6 @@ var missingNumber = function(nums) {
   for(let i = 0 ; i < nums.length; i++) {
     map[ nums[i] ] = i
   }
-  debugger
   for(let n = max ; n > 0; n--) {
     let result = n - 1
     if(map[result] === undefined) {
