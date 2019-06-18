@@ -42,7 +42,6 @@ var orangesRotting = function(grid) {
     if(rotted.length === 0) {
       break
     }
-    debugger
     count ++
     for(let badOrange of rotted) {
       grid[ badOrange[0] ][ badOrange[1] ] = 2
