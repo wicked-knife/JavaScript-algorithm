@@ -1,1 +1,1 @@
-## leetcode上的算法题使用Javascript的实现
+## leetcode上的算法题使用JavaScript的实现
