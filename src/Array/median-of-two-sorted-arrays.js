@@ -5,9 +5,6 @@
  */
 var findMedianSortedArrays = function(nums1, nums2) {
   const sorted = []
-  if(nums1.length > nums2.length) {
-    [nums2, nums1] = [nums1, nums2]
-  }
   const times = nums1.length + nums2.length
   for(let i = 0; i < times; i++) {
     if(nums1[0] < nums2[0]) {
