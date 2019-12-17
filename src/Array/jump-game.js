@@ -12,9 +12,8 @@ var canJump = function(nums) {
   }
   function findMaxIndex(startIndex, endIndex) {
     let ret = -1
-    const sliced = nums.slice(startIndex, endIndex + 1)
-    for(let i = 0; i < sliced.length; i++) {
-      ret = Math.max(startIndex + i + nums[startIndex + i], ret)
+    for(let i = startIndex; i <= endIndex; i++) {
+      ret = Math.max(startIndex + (i - startIndex) + nums[i], ret)
     }
     return ret
   }
