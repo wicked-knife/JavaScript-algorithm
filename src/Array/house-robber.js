@@ -3,13 +3,17 @@
  * @return {number}
  */
 var rob = function(nums) {
-  let prevMax = 0, max = 0
-  for(let num of nums) {
-    let temp = max
-    max = Math.max(max, prevMax + num)
-    prevMax = temp
+  if(!nums.length) {
+    return 0
   }
-  return max
+  const dp = []
+  dp[0] = nums[0]
+  dp[1] = Math.max(nums[0], nums[1] || 0)
+  for(let i = 2; i < nums.length; i++) {
+    dp[i] = Math.max(nums[i] + dp[i - 2], dp[i - 1])
+  }
+  return dp.pop()
 }
+
 
 export default rob
