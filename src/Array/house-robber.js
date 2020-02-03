@@ -1,4 +1,9 @@
 /**
+ * f(1) = A1
+ * f(2) = Max(A1, A2)
+ * f(3) = Max( f(2), A3 + f(1) )
+ * f(4) = Max( f(3), A4 + f(2) )
+ * => f(n) = Max( f(n - 1), An + f(n - 2) )
  * @param {number[]} nums
  * @return {number}
  */
